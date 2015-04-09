@@ -1,4 +1,4 @@
-activator-akka-scala-seed
+Misc Code 
 =========================
 
-A minimal seed template for an Akka with Scala build 
+Code written while prepping up for inteviews. 
