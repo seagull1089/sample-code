@@ -20,6 +20,9 @@ public class SimpleFunctions {
         for(int i=0; i < length;i++){
             builder.append("0");
         }
+        //int[] rand = new int[10];
+        //System.out.println(rand.length);
+
         builder.append(a);
         return builder.toString();
     }
@@ -54,9 +57,20 @@ public class SimpleFunctions {
         return builder.reverse().toString();
     }
 
+    public static  boolean isPrime(int x){
+        if(x%2==0) return false;
+        for(int i = 3; i*i < x; i+=2){
+            if(x%i==0) return false;
+        }
+        return true;
+
+    }
+
     public static void main(String[] args){
         System.out.println(addBinaryStrings("1100","1111"));
         SimpleFunctions jj = new SimpleFunctions();
         SimpleFunctions.MySimpleInnerClass jm = jj.new MySimpleInnerClass();
     }
+
+    //Given a number, Find the next biggest palindrome number
 }
