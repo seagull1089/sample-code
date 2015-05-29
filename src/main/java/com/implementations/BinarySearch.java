@@ -1,6 +1,7 @@
 package com.implementations;
 
 import java.util.*;
+import java.util.Arrays;
 
 /**
  * Created by aragipindi on 4/1/15.
@@ -99,9 +100,9 @@ import java.util.*;
 
     public List<String> generateParenthesis2(int n) {
         if (n < 1) {
-            return Arrays.asList("");
+            return java.util.Arrays.asList("");
         } else if (n == 1) {
-            return Arrays.asList("()");
+            return java.util.Arrays.asList("()");
         } else {
             Set<String> set = new HashSet<>(n * 2);
             for (String s : generateParenthesis2(n - 1)) {
